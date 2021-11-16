@@ -1,3 +1,2 @@
 # StudentPlanner
-
-In order to run this program, Andorid Studio will be needed. 
+In order to run the program, the user must have Andorid Studio.
