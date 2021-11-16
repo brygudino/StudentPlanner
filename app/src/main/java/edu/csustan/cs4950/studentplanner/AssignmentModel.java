@@ -21,7 +21,7 @@ public class AssignmentModel {
     public AssignmentModel() {
     }
 
-    //toString is necessary for print the contents of a class object
+    //toString prints the contents of a class object
 
 
     @Override

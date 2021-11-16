@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         ShowAssignmentOnListView(dataBase);
 
-// button listeners for the add and view all buttons
+// button listeners for the buttons
         btn_addAssignment.setOnClickListener(new View.OnClickListener() {
 
             @Override
