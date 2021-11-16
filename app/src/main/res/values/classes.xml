@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="classes_array">
+        <item>Software Engineering</item>
+        <item>Operating Systems</item>
+        <item>Database Management</item>
+    </string-array>
+
+</resources>
