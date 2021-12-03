@@ -10,11 +10,9 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
 
-    //refernces to buttons and other controls on the layout
+    //references to buttons and other controls on the layout
     Button btn_addAssignment, btn_viewAll;
     EditText tb_assignment, tb_description, tb_date, tb_task;
     ListView lv_assignmentList;
@@ -27,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // \/ THE PAGE THAT FIRST OPENS
         setContentView(R.layout.activity_main);
 
 
