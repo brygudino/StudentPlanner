@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1922402492187861" />
         <entry key="app/src/main/res/layout/add_assignments.xml" value="0.2210144927536232" />
+        <entry key="app/src/main/res/layout/calendar_cell.xml" value="1.0038621259967795" />
         <entry key="app/src/main/res/layout/edit_assignments.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/homepage.xml" value="0.19690944073345176" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.18072916666666666" />
       </map>
     </option>
   </component>

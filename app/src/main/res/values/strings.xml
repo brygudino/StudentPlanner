@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">StudentPlanner</string>
+    <string name="backward"><![CDATA[<-]]></string>
+    <string name="month">December 2021</string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="addAssignment">Add Assignment</string>
 </resources>
