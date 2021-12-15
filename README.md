@@ -1,5 +1,7 @@
 # StudentPlanner
 
+On GitHub please select the "updated_main" branch when pulling.
+
 In order to run this program, Android Studio will be needed. 
 When you open it, at the top choose the Pixel_3a_API_31_arm64-v8a emulator.
 Then, to the left of that, click the drop down and create a configuration to run the app. 

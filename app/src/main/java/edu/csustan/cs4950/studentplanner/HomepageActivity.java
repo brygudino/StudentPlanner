@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -21,10 +22,16 @@ import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class HomepageActivity extends AppCompatActivity implements CalendarAdapter.OnItemListener{
 
+    public static final String EXTRA_MESSAGE = "com.example.studentplanner.MESSAGE";
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
     private LocalDate selectedDate;
@@ -33,6 +40,7 @@ public class HomepageActivity extends AppCompatActivity implements CalendarAdapt
         super.onCreate(savedInstanceState);
         // \/ THE PAGE THAT FIRST OPENS
         setContentView(R.layout.homepage);
+        Intent intent = getIntent();
 
         initWidgets();
         selectedDate = LocalDate.now();
@@ -92,7 +100,12 @@ public class HomepageActivity extends AppCompatActivity implements CalendarAdapt
     }
 
     public void addAssignmentAction(View view) {
-        setContentView(R.layout.activity_main);
+
+        //setContentView(R.layout.activity_main);
+        Intent intent = new Intent(this, MainActivity.class);
+        String message = "info";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 
     @Override

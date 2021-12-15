@@ -2,15 +2,19 @@ package edu.csustan.cs4950.studentplanner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static final String EXTRA_MESSAGE = "com.example.studentplanner.MESSAGE";
 
     //references to buttons and other controls on the layout
     Button btn_addAssignment, btn_viewAll;
@@ -27,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // \/ THE PAGE THAT FIRST OPENS
         setContentView(R.layout.activity_main);
+        // Get the Intent that started this activity and extract the string
+        Intent intent = getIntent();
 
 
         btn_addAssignment = findViewById(R.id.btn_addAssignment);
@@ -71,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
             DataBase dataBase = new DataBase(MainActivity.this);
             ShowAssignmentOnListView(dataBase);
 
-
             //Toast.makeText(MainActivity .this,"view all button",Toast.LENGTH_SHORT).show();
         }
         });
@@ -81,6 +86,14 @@ public class MainActivity extends AppCompatActivity {
     private void ShowAssignmentOnListView(DataBase dataBase2) {
         assignmentArrayAdapter = new ArrayAdapter<AssignmentModel>(MainActivity.this, android.R.layout.simple_list_item_1, dataBase2.getEverything());
         lv_assignmentList.setAdapter(assignmentArrayAdapter);
+    }
+    public void goBackAction(View view) {
+
+        //setContentView(R.layout.activity_main);
+        Intent intent = new Intent(this, HomepageActivity.class);
+        String message = "homepage";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 }
 
