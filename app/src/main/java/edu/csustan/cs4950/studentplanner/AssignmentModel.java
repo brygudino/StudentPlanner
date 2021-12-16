@@ -1,3 +1,5 @@
+//writen by: Bryana Gudino
+
 package edu.csustan.cs4950.studentplanner;
 
 public class AssignmentModel {
@@ -8,8 +10,8 @@ public class AssignmentModel {
     private int date;
     private String task;
 
+  
     //constructor
-
     public AssignmentModel(int id, String assignment, String description, int date, String task) {
         this.id = id;
         this.assignment = assignment;
@@ -21,10 +23,9 @@ public class AssignmentModel {
     public AssignmentModel() {
     }
 
+    
     //toString is necessary for print the contents of a class object
-
-
-    @Override
+   @Override
     public String toString() {
         return "AssignmentModel{" +
                 "id=" + id +
