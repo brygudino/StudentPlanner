@@ -1,3 +1,4 @@
+//Written and edited: Bryana Gudino and Sherly Yaghoubi
 package edu.csustan.cs4950.studentplanner;
 
 import androidx.appcompat.app.AppCompatActivity;
