@@ -1,4 +1,5 @@
 //Written and edited: Bryana Gudino and Sherly Yaghoubi
+//Description: contains the activity for the adding assignments and calendar homepage
 package edu.csustan.cs4950.studentplanner;
 
 import androidx.appcompat.app.AppCompatActivity;
