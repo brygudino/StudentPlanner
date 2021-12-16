@@ -1,4 +1,5 @@
 //writen by: Bryana Gudino
+//Description: Assignment Object Model
 
 package edu.csustan.cs4950.studentplanner;
 
