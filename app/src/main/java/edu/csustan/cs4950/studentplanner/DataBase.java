@@ -1,4 +1,5 @@
 //Written by: Bryana Gudino
+//Description: Applications database
 package edu.csustan.cs4950.studentplanner;
 
 import android.content.ContentValues;
