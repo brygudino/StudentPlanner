@@ -34,3 +34,5 @@ activity_main.xml- layout for adding assignments page
 calendar_cell.xml- layout for calendar object on the homepage
 homepage.xml- layout for the homepage
 edit_assignments.xml- layout for the edit assignments page
+
+All of these files can be found here: updated>main>app>src>main>studentplanner
